@@ -1,0 +1,83 @@
+﻿$MyColor-max480: #ffd800;
+$MyColor-min480: #e1e85c;
+$MyColor-min800: #a7e416;
+$MyColor-min1200: #8f719b;
+
+@media only screen and (max-width: 480px) {
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: stretch;
+        width: 100%;
+        margin-left: 1%;
+        padding-left: auto;
+        margin-right: auto;
+    }
+
+    .flex-item {
+        background: $MyColor-max480;
+        border: 1px solid black;
+        padding: 5%;
+        margin: 2%;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: stretch;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .flex-item {
+        background: $MyColor-min480;
+        border: 1px solid black;
+        padding: 5%;
+        margin: 2%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        margin-right: 10%;
+    }
+
+    .flex-item {
+        background: $MyColor-min800;
+        border: 1px solid black;
+        padding: 5%;
+        margin: 2%;
+        flex-basis: 240px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flex-item {
+        height: 50px;
+        background: $MyColor-min1200;
+        border: 1px solid black;
+        padding: 5%;
+        margin: 2%;
+    }
+}
+
+
+

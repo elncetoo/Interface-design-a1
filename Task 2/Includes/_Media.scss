@@ -1,0 +1,87 @@
+﻿$MyColor-max480: black;
+$MyColor-min480: #808080;
+$MyColor-min800: #8f719b;
+$MyColor-min1200: #0094ff;
+$MyWidth: 240px;
+
+@media only screen and (max-width: 480px) {
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: stretch;
+        width: 100%;
+        margin-left: 1%;
+        padding-left: 1%;
+        margin-right: 1%;
+    }
+
+    .flex-item {
+        width: 100%;
+        background: $MyColor-max480;
+        border: 1px solid black;
+        padding: 5%;
+        margin: 2%;
+        align-content:stretch;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: stretch;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .flex-item {
+        width: $MyWidth;
+        background: $MyColor-min480;
+        border: 1px solid black;
+        padding: 5%;
+        margin: 2%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .flex-item {
+        width: $MyWidth;
+        background: $MyColor-min800;
+        border: 1px solid black;
+        padding: 5%;
+        margin: 2%;
+        flex-basis: 240px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .flex-item {
+        width: $MyWidth;
+        height: 50px;
+        background: $MyColor-min1200;
+        border: 1px solid black;
+        padding: 5%;
+        margin-left: 2%;
+    }
+}

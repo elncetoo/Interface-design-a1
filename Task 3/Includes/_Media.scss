@@ -1,0 +1,340 @@
+﻿$MyColor-max480: #dfdb84;
+$MyColor-min480: #e1e85c;
+$MyColor-min800: #a7e416;
+$MyColor-min1200: #8f719b;
+
+@media only screen and (max-width: 780px) {
+    .row {
+        display: inline-flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2%;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: stretch;
+        width: 90%;
+        padding-left: 1%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 2%;
+    }
+
+    .flex-item {
+        background: $MyColor-max480;
+        border: 1px solid black;
+        width: auto;
+        height: auto;
+        padding: 5%;
+        margin: 2%;
+        flex-basis: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .flex-item-logo {
+        display: flex;
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+
+    .flex-item-nav {
+        display: none;
+    }
+
+    .flex-item-special {
+        display: none;
+    }
+
+    .flex-item-image {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 10%;
+    }
+
+    .text-container {
+        display: inline-flex;
+        width: 100%;
+        margin: 5%;
+        padding-right: 10%;
+    }
+
+    .flex-item-text {
+        display: flex;
+        background: #8f719b;
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: auto;
+        border: 1px solid #000;
+    }
+
+    .flex-item-p1 {
+        display: flex;
+        background: #8f719b;
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100px;
+        width: 90%;
+        border: 1px solid #000;
+    }
+
+    .flex-item-p2 {
+        display: none;
+    }
+
+    .flex-item-b1 {
+        display: flex;
+        background: #8f719b;
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 30px;
+        width: 90%;
+        border: 1px solid #000;
+    }
+
+    .flex-item-b2 {
+        display: none;
+    }
+
+    .flex-item-b3 {
+        display: none;
+    }
+
+    .flex-item-footer {
+        display: flex;
+        background: #808080;
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 40px;
+        width: 90%;
+        border: 1px solid #000;
+    }
+}
+
+@media only screen and (min-width: 780px) {
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:column;
+        justify-content: space-around;
+        align-content: stretch;
+        width: 80%;
+        padding-left: 1%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .par-wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 130%;
+        margin-right: %;
+    }
+
+    .row2-wrapper{
+        display:flex;
+        flex-direction:column;
+        width: 100%;
+
+    }
+
+    .row3-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .flex-item {
+        background: $MyColor-min480;
+        border: 1px solid black;
+        width:100%;
+        padding: 5%;
+        margin: 2%;
+    }
+
+    .flex-item-special {
+        display: inline-flex;
+    }
+
+    .flex-item-nav {
+        display: inline-flex;
+        background: $MyColor-min480;
+        width:100%;
+        padding:3%;
+        margin-left: 11%;
+        margin-right: auto;
+    }
+
+    .flex-item-image {
+
+        width:100%;
+        padding: 3%;
+    }
+
+    .flex-item-text {
+        display: flex;
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: 2%;
+        height: auto;
+        width: auto;
+
+    }
+
+
+    .flex-item-p2 {
+        display: flex;
+        background: #8f719b;
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100px;
+        width: 100%;
+        border: 1px solid #000;
+    }
+
+    .p-container {
+        display:inline-flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .row3-wrapper {
+        display:inline-flex;
+
+    }
+}
+
+@media screen and (min-width:960px) {
+    .row2-wrapper {
+        display:flex;
+        flex-direction:row-reverse;
+    }
+
+    .par-wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-right: 5%;
+    }
+
+    .p-container{
+        flex-direction: row;
+        flex-grow: 1;
+        width: 70%;
+        margin: 5%;
+    }
+
+    .row3 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    flex-item-p2 {
+        width: 100px;
+        margin-right: 5%;
+    }
+    
+    
+   .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        width: 80%;
+        padding-left: 1%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flex-item {
+        background: $MyColor-min800;
+        border: 1px solid black;
+        padding: 5%;
+        margin: 2%;
+    }
+
+    .flex-item-special {
+        display: inline-flex;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    .flex-item-image {
+
+
+    }
+
+    .par-wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin-right: 5%;
+    }
+
+    .row3 {
+        display:flex;
+        flex-direction:row;
+        width:100%;
+    }
+
+    .row3-wrapper {
+        width: 40%;
+        margin-left: 5%;
+        margin-right: auto;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flex-item {
+        height: 50px;
+        background: $MyColor-min1200;
+        border: 1px solid black;
+        padding: 5%;
+        margin: 2%;
+    }
+
+    .flex-item-special {
+        display: flex;
+    }
+
+    .flex-item-b1,  {
+        display: flex;
+        background: #8f719b;
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 30px;
+        width: 100px;
+        border: 1px solid #000;
+    }
+    
+}

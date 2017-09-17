@@ -1,0 +1,49 @@
+﻿@mixin RoundedCorners ($radius: 5px) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+.row {
+    display: inline-flex;
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-item {
+    display:flex;
+    @include RoundedCorners(5px);
+    height: 50px;
+    padding: 1%;
+    width: 90%;
+}
+
+
+.flex-item-text {
+    display: inline-flex;
+
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.h3 {
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+    color: #292727;
+}
